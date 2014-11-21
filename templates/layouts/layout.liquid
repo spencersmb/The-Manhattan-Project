@@ -17,11 +17,13 @@
 
     </head>
     <body>
-        {% include "navbar" %}
+        {% include "header" %}
         <div id="wrapper" class="container">
             <!-- Content block, child page inject content -->
             {% block content %}{% endblock %}
+            <div class="cd-overlay"></div>
         </div>
+        {% include "navbar" %}
         <!-- Script block allowing child pages to inject their own scripts -->
         {% block scripts %}{% endblock %}
 
@@ -29,5 +31,6 @@
         <!--{{ "//code.jquery.com/jquery-1.11.0.min.js" | script_tag }}-->
         {{ "bootstrap.min.js" | asset_url | script_tag }}
         {{ "classie.js" | asset_url | script_tag }}
+        {{ "main.js" | asset_url | script_tag }}
     </body>
 </html>

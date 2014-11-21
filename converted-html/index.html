@@ -1,4 +1,48 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Title block allowing child pages to override -->
+        <title>Empty</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <script src="/assets/js/modernizr.min.js"></script>
+        <!-- Styles -->
+        <link href="/app/css/style.min.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- Style block allowing child pages to inject their own styles -->
+        
 
+        <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <header class="main-container">
+<div id="logo"><a href="#0"><img src=/assets/img/cd-logo.svg  class="img-responsive"></a></div>
+
+</header><!-- /header -->
+        <div id="wrapper" class="container">
+            <!-- Content block, child page inject content -->
+            
+<h1>The Manhattan Project</h1>
+<p>
+This is a quick and simple setup for using <a href="https://github.com/spencersmb/The-Manhattan-Project/">Sass + Bootstrap + Bourbon + Jquery</a> in a Mixture project.
+This was quickly put together based off of <a href="https://github.com/twbs/bootstrap-sass">Sass and Bootstrap</a>.
+<p>
+Ingredients:
+<li>Sass</li>
+<li>Bootstrap with Sass v3.3.1</li>
+<li>Bourbon</li>
+<li>Jquery via CDN</li>
+</p>
+<p>With a splash of:</p>
+<li>Modernizer</li>
+<li>Classie.js</li>
+<a href="/example">Here's an example page.</a>
+
+            <div class="cd-overlay"></div>
+        </div>
+        
   <nav class="nav">
     
     <ul id="primary-nav" class="primary-nav is-fixed">
@@ -54,7 +98,7 @@
             
             <li><a href="#contact">Contact</a></li>
             Example if statement
-            <li {% if mixture.url == "example" %}class="active"{% endif %}>
+            <li >
                <a href="example.html">Learn</a>
              </li>
             <li class="dropdown">
@@ -73,3 +117,13 @@
         </div>/.nav-collapse
       </div>
     </div> -->
+        <!-- Script block allowing child pages to inject their own scripts -->
+        
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <!--<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+        <script src="/app/js/bootstrap.min.js"></script>
+        <script src="/assets/js/classie.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
