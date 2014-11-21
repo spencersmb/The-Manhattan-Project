@@ -1,0 +1,19 @@
+// Import Bourbon
+@import "bourbon/_bourbon.scss";
+
+@import "bootstrap/bootstrap.scss";
+
+#wrapper {
+	margin-top: 70px;
+}
+
+.cd-main-content, .cd-main-header {
+    /* Force Hardware Acceleration in WebKit */
+    @include transform(translateZ(0));
+    will-change: transform;
+}
+
+.btn {
+	@include button(#DC322F);
+	font-size: 15px;
+}
