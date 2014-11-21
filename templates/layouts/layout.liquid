@@ -5,11 +5,16 @@
         <title>{% block title %}Empty{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        {{ "modernizr.js" | asset_url | script_tag }}
         <!-- Styles -->
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-    {{ "style.css" | asset_url | stylesheet_tag }}
+        {{ "style.css" | asset_url | stylesheet_tag }}
         <!-- Style block allowing child pages to inject their own styles -->
         {% block styles %}{% endblock %}
+
+        <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <![endif]-->
+
     </head>
     <body>
         {% include "navbar" %}
@@ -20,7 +25,8 @@
         <!-- Script block allowing child pages to inject their own scripts -->
         {% block scripts %}{% endblock %}
 
-        {{ "bootstrap.min.js" | asset_url | script_tag }}
         {{ "//code.jquery.com/jquery-1.11.0.min.js" | script_tag }}
+        {{ "bootstrap.min.js" | asset_url | script_tag }}
+        {{ "classie.js" | asset_url | script_tag }}
     </body>
 </html>

@@ -1,40 +1,64 @@
 {
     "debug": false,
-    "domain": null,
     "lintScripts": false,
-    "modelSource": null,
     "preprocessorLocations": [
         "assets"
     ],
     "preprocessorScriptOutput": "assets/js",
     "preprocessorStyleOutput": "assets/css",
-    "projectDescription": "Sass-Bootstrap based start",
     "projectName": "Sass-Bootstrap",
-    "publishedId": null,
+    "projectDescription": "Sass-Bootstrap based start",
+    "publishedId": "19240",
     "serverHostname": null,
     "serverPort": null,
-    "simpleModePartnerServer": null,
+    "templateDirectory": "templates",
     "templateDefaultLayout": "layout",
     "templateDefaultPage": "index",
-    "templateDirectory": "templates",
     "type": "mixture",
     "useCompass": false,
+    "simpleModePartnerServer": null,
+    "simpleModeFileTypes": null,
+    "modelSource": null,
+    "domain": null,
+    "convertHtml": {
+        "path": null,
+        "extension": ".html",
+        "ignoreUrls": null,
+        "relativePaths": false,
+        "default": null
+    },
+    "followLeader": true,
+    "routes": null,
+    "customRuby": false,
+    "customRubyPath": null,
+    "remoteDebugPort": 0,
+    "optimiseImages": true,
+    "password": null,
+    "ignoreDir": [
+        "node_modules"
+    ],
+    "customTodos": null,
     "autoPrefixer": {
         "active": false,
         "browsers": [
             "last 2 version",
-            "\u003e 1%",
+            "> 1%",
             "ie 8",
             "ie 7"
-        ]
-    },
-    "convertHtml": {
-        "relativePaths": false
+        ],
+        "sourceMap": false
     },
     "sass": {
-            "outputStyle": "nested",
-            "sourceMap": false,
-            "lineNumbers": false,
-            "useLibSass": true
-        }
+        "outputStyle": "nested",
+        "sourceMap": false,
+        "cache": false,
+        "lineNumbers": false,
+        "globbing": false,
+        "useLibSass": true,
+        "debugInfo": false
+    },
+    "sitemap": false,
+    "less": null,
+    "optimiseSVG": true,
+    "reload": 0
 }
