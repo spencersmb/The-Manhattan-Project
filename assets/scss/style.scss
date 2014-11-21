@@ -3,6 +3,8 @@
 
 @import "bootstrap/bootstrap.scss";
 
+@import '../partials/variables'; // colors, fonts etc...
+
 #wrapper {
 	margin-top: 70px;
 }
