@@ -1,43 +1,42 @@
 jQuery(document).ready(function($){
 
 	var desktopLarge = 1170,
-	resizeWidth;
+		resizedWidth;
+
+	moveNavigation();
 
 	$(window).on('resize', function(){
-		(!window.requestAnimationFrame) ? setTimeout(checkwindowWidth, 300) : window.requestAnimationFrame(checkwindowWidth);
+		(!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
 	});
-
-	var windowWidth = $(window).width();
 
 	function checkwindowWidth(){
 
-		
-			var width = $(window).width();
-			//console.log("width " + width);
-		// $(window).resize(function() {
-		// 	resizeWidth = $(window).width();
-		// //console.log("resize" + wi);
-		// });
-
-		// if( resizeWidth || windowWidth >= desktopLarge){
-		// 	console.log('desktop Large');
-		// } else {
-		// 	console.log('desktop small');
-		// }
-	};
-	
-	//console.log("on load " + windowWidth);
-
-	// var innerWidth = $(window).innerWidth();
-	// console.log("inner width2 " + innerWidth);
-	var desktop = checkwindowWidth();
-	console.log("window width" + windowWidth);
-
-	console.log("width" + desktop);
+		var windowWidth = $(window).width();
 
 		$(window).resize(function() {
-			var wi = $(window).width();
-		console.log("resize" + wi);
-	});
+			resizedWidth = $(window).width();
+		});
+
+		if( resizedWidth >= desktopLarge || windowWidth >= desktopLarge ){
+			return true;
+		} else {
+			return false;
+		}
+	};
+	
+	function moveNavigation(){
+
+		var desktop = checkwindowWidth();
+
+		if ( desktop ) {
+        	console.log('desktop');
+			// navigation.detach();
+			// navigation.insertBefore('.cd-header-buttons');
+		} else {
+			console.log('mobile');
+			// navigation.detach();
+			// navigation.insertAfter('.cd-main-content');
+		}
+	}
 	
 });
