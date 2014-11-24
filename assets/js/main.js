@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
 
+	var test;
 	var desktopLarge = 1170,
 		resizedWidth;
 
