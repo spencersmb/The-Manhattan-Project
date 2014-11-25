@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 	//console.log('total '+totalh1);
 
 	var h1parse = parseInt($('h1').css('margin-Top').replace('px', ''));
-	//just add + px to add px to the end of the string
+	//just add + px to add px to the end of the string,
 	//console.log('h1 parse '+h1parse);
 	
 //**Check where browser vertical distance
