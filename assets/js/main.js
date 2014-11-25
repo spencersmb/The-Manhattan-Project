@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
 
+<<<<<<< HEAD
 
 //**Check offset of element
 //--------------------------------------
@@ -38,6 +39,9 @@ jQuery(document).ready(function($){
 //**Check browser window size & remove nav
 //--------------------------------------
 	var nav = $('.nav');
+=======
+	var test;
+>>>>>>> origin/master
 	var desktopLarge = 1170,
 		resizedWidth;
 
