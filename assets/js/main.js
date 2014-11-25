@@ -5,17 +5,17 @@ jQuery(document).ready(function($){
 //**Check offset of element
 //--------------------------------------
 	var h1Offset = $('h1').offset().top;
-	//console.log('offset '+h1Offset);
+	console.log('offset '+h1Offset);
 
 	var h1height = $('h1').height();
-	//console.log('height '+h1height);
+	console.log('height '+h1height);
 
 	var totalh1 = h1height + h1Offset;
-	//console.log('total '+totalh1);
+	console.log('total '+totalh1);
 
 	var h1parse = parseInt($('h1').css('margin-Top').replace('px', ''));
 	//just add + px to add px to the end of the string,
-	//console.log('h1 parse '+h1parse);
+	console.log('h1 parse '+h1parse);
 	
 //**Check where browser vertical distance
 //--------------------------------------
@@ -28,9 +28,9 @@ jQuery(document).ready(function($){
 
 		$(window).on('scroll', function(){
 			var scrollTop = $(window).scrollTop();
-			//console.log(scrollTop);
+			console.log('window on scroll' +scrollTop);
 	});
-	//console.log(windowTop);
+	console.log("window on load" +windowTop);
 	};
 
 
@@ -39,8 +39,6 @@ jQuery(document).ready(function($){
 //**Check browser window size & remove nav
 //--------------------------------------
 	var nav = $('.nav');
-
-	var test;
 
 	var desktopLarge = 1170,
 		resizedWidth;
