@@ -50,15 +50,7 @@
         ],
         "sourceMap": false
     },
-    "sass": {
-        "outputStyle": "nested",
-        "sourceMap": false,
-        "cache": false,
-        "lineNumbers": false,
-        "globbing": false,
-        "useLibSass": true,
-        "debugInfo": false
-    },
+
     "sitemap": false,
     "less": null,
     "optimiseSVG": true,
